@@ -57,7 +57,7 @@
     "deep-object-diff": "^1.1.9",
     "fs-extra": "^11.1.0",
     "marked": "^4.2.12",
-    "node-pty-prebuilt-multiarch": "^0.10.0",
+    "node-pty": "https://github.com/daniel-brenot/node-pty.git#2072c46",
     "uuid": "^9.0.0",
     "whatwg-url": "^12.0.1",
     "which": "^2.0.2",
@@ -66,6 +66,11 @@
     "xterm-addon-ligatures": "0.6.0",
     "xterm-addon-web-links": "0.8.0",
     "xterm-addon-webgl": "0.14.0"
+  },
+  "overrides": {
+    "node-pty-prebuilt-multiarch": {
+      "prebuild-install": "^7.0.0"
+    }
   },
   "devDependencies": {
     "@semantic-release/apm-config": "^9.0.1",
